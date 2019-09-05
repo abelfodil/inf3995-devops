@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-- Docker
-- `binfmt-qemu-static` and `qemu-user-static-bin` for ARM emulation
+- Install `docker`
+- Enable docker [experimental](https://github.com/docker/cli/issues/947#issue-305437486) [CLI](https://docs.docker.com/engine/reference/commandline/dockerd/#description) support
 
 ## Build & push
 
