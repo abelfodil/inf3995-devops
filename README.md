@@ -17,6 +17,8 @@ Example: `registry.gitlab.com/your_username/your_repo` for Gitlab or `your_usern
 
 When using Gitlab CI, simply put `image: your_registry_url/inf3995-ci` at the beginning of your `.yml` file.
 
+Note: It is recommended to setup a [Gitlab Runner](https://github.com/abelfodil/gitlab-runner) beforehand.
+
 ### For "cross-compilation"
 
 To build ARM32 binaries on your x86_64 machine and at the same time link to system libraries (such as `pthread`), execute:
