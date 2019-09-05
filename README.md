@@ -23,4 +23,4 @@ To build ARM32 binaries on your x86_64 machine and at the same time link to syst
 
 - `$ docker pull your_registry_url/inf3995-arm-builder`
 
-- `$ docker run your_registry_url/inf3995-arm-builder -v /path/to/your/git/repo:/projet3 /projet3/path/to/your/compilation/script`
+- `$ docker run -v /path/to/your/git/repo:/projet3 your_registry_url/inf3995-arm-builder /bin/bash /projet3/path/to/your/compilation/script`
