@@ -4,7 +4,7 @@
 
 - Install `docker`
 - Enable docker [experimental](https://github.com/docker/cli/issues/947#issue-305437486) [CLI](https://docs.docker.com/engine/reference/commandline/dockerd/#description) support
-- Install `qemu-user-static` for ARM emulation
+- Install `qemu-user-static` and `binfmt-qemu-static` for ARM emulation
 
 ## Build & push
 
