@@ -16,7 +16,7 @@ Example: `registry.gitlab.com/your_username/your_repo` for Gitlab or `your_usern
 
 ### For continuous integration (Gitlab CI)
 
-When using Gitlab CI, simply put `image: your_registry_url/inf3995-ci` at the beginning of your `.yml` file.
+When using Gitlab CI, simply adapt the `.gitlab-ci.yml` file to your use case.
 
 Note: It is recommended to setup a [Gitlab Runner](https://github.com/abelfodil/gitlab-runner) beforehand.
 

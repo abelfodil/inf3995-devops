@@ -1,0 +1,28 @@
+image: your_registry_url/inf3995-ci
+
+variables:
+  GIT_SUBMODULE_STRATEGY: "recursive"
+
+stages:
+  - build
+  - test
+
+build-cpp:
+  stage: build
+  script:
+    - path/to/your/cpp/compilation/script/compile.sh
+
+build-android:
+  stage: build
+  script:
+    - path/to/your/android/compilation/script/compile.sh
+
+test-cpp:
+  stage: test
+  script:
+    - path/to/your/cpp/test/suite/test.sh
+
+test-android:
+  stage: test
+  script:
+    - path/to/your/android/test/suite/test.sh
