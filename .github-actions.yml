@@ -1,0 +1,37 @@
+# See https://github.com/actions/starter-workflows/tree/master/ci for more examples
+# Doc: https://help.github.com/en/articles/workflow-syntax-for-github-actions
+
+name: INF3995 CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+
+    container:
+      image: your_registry_url/inf3995-ci
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Example
+        run: |
+          first command
+          second, etc.
+
+      - name: Build C++
+        run: /path/to/your/cpp/compilation/script/compile.sh
+
+      - name: Build Android
+        run: /path/to/your/android/compilation/script/compile.sh
+
+      - name: Test C++
+        run: /path/to/your/cpp/test/suite/test.sh
+        needs: Build C++
+
+      - name: Test Android
+        run: /path/to/your/android/test/suite/test.sh
+        needs: Build Android

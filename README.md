@@ -30,11 +30,17 @@ Example: `registry.gitlab.com/your_username/your_repo` for Gitlab or `your_usern
 
 ### Using images
 
-#### For continuous integration (Gitlab CI)
+#### For continuous integration
 
-When using Gitlab CI, simply adapt the `.gitlab-ci.yml` file to your use case.
+##### Gitlab CI
+
+Adapt the `.gitlab-ci.yml` file to your use case.
 
 Note: It is recommended to setup a [Gitlab Runner](https://github.com/abelfodil/gitlab-runner) beforehand.
+
+##### Github Actions
+
+Adapt the `.github-actions.yml` file to your use case.
 
 #### For "cross-compilation"
 
