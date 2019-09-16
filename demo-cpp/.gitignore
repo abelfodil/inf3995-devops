@@ -1,0 +1,47 @@
+# CMake
+cmake-*/
+[B|b]uild*/
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.hex
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# STM32CubeMX
+.mxproject
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Other
+*.tu
+*.su
+
+# Docker
+*.env
