@@ -1,6 +1,6 @@
 function(package_add_test TESTNAME)
     add_executable(${TESTNAME} ${ARGN})
-    target_compile_options(${TESTNAME} PRIVATE -Wall -Wextra -pedantic)
+    target_compile_options(${TESTNAME} PRIVATE ${WARNING_FLAGS})
     target_link_libraries(${TESTNAME} gtest gmock gtest_main common)
     add_test(${TESTNAME} COMMAND ${TESTNAME})
 endfunction()
