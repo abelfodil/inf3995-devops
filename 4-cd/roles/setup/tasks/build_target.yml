@@ -1,0 +1,2 @@
+- name: "Build {{target_name}}"
+  shell: "{{remote_project_location}}/compile.sh {{target_name}}"
