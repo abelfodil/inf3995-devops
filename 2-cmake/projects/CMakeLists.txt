@@ -1,7 +1,7 @@
-add_executable(project1 main1.cpp)
-target_compile_options(project1 PRIVATE ${WARNING_FLAGS})
-target_link_libraries(project1 PRIVATE common)
+add_executable(server server.cpp)
+target_compile_options(server PRIVATE ${WARNING_FLAGS})
+target_link_libraries(server PRIVATE common)
 
-add_executable(project2 main2.cpp)
-target_compile_options(project2 PRIVATE ${WARNING_FLAGS})
-target_link_libraries(project2 PRIVATE common)
+add_executable(client client.cpp)
+target_compile_options(client PRIVATE ${WARNING_FLAGS})
+target_link_libraries(client PRIVATE common)
