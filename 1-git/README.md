@@ -62,4 +62,10 @@ Réapplique une série de commits sur une base différente
 
 - <https://git-scm.com/book/en/v2/Git-Branching-Rebasing>
 
-## reflog & fsck --lost-found
+## Autres commandes
+
+- Ajouter un commit existant à la branche courante: `git cherry-pick -x commit-hash`
+
+- Afficher l'historique des commandes Git effectuées sur le repo courant: `git reflog show --all`
+
+- Afficher les objets flottants du repo courant: `git fsck --lost-found`
