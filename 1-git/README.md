@@ -50,6 +50,8 @@ Réapplique une série de commits sur une base différente
 
 - Changer le commit parent par un autre commit: `git rebase --onto new-parent old-parent`
 
+- Changer l'ordre des `n` derniers commits, les squasher ou bien en supprimer quelques-uns intéractivement: `git rebase -i HEAD~n`
+
 ### Liens utiles
 
 - <https://learngitbranching.js.org/>
@@ -57,5 +59,7 @@ Réapplique une série de commits sur une base différente
 - <https://www.gitkraken.com/>
 
 - <https://git-scm.com/docs/git-rebase>
+
+- <https://git-scm.com/book/en/v2/Git-Branching-Rebasing>
 
 ## reflog & fsck --lost-found
