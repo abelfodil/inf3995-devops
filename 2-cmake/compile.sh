@@ -5,9 +5,5 @@ BUILD_DIR="$SOURCE_DIR/cmake-build"
 
 rm -rf $BUILD_DIR
 
-NINJA=""
-if [ -x "$(command -v ninja)" ]; then
-  NINJA="-GNinja"
-fi
-
+NINJA=$([ -x "$(command -v ninja)" ] && echo "-GNinja")
 cmake -H"$SOURCE_DIR" -B"$BUILD_DIR" -DCMAKE_BUILD_TYPE=Release $NINJA && cmake --build "$BUILD_DIR" --target $1
