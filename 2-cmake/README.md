@@ -4,6 +4,7 @@
 
 - `cmake`
 - `ninja` (recommandé) or GNU `make`
+- `gcc` ou `clang`
 
 ## Utiliser CMake (gros résumé)
 
