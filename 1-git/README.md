@@ -24,14 +24,38 @@ Par exemple, sur un intervalle de 10 000 commits, il y aura dans le pire des cas
 
 ## submodule
 
+Permet d'avoir un repo git à l'intérieur d'un autre repo git.
+
+### Comment l'utiliser
+
 - Ajouter un sous-module: `git submodule add repo-url submodule-path`
 
 - Mettre à jour les sous-module: `git submodule update --init --recursive`
 
 - Cloner un repo récursivement: `git clone --recurse-submodules repo-url`
 
-## merge-base
+### Liens utiles
+
+- <https://git-scm.com/book/en/v2/Git-Tools-Submodules>
 
 ## rebase
+
+Réapplique une série de commits sur une base différente
+
+### Comment l'utiliser
+
+- Changer la base des commits de la branche courante: `git rebase source-branch`
+
+- Changer la base des commits de la branche cible: `git rebase source-branch target-branch`
+
+- Changer le commit parent par un autre commit: `git rebase --onto new-parent old-parent`
+
+### Liens utiles
+
+- <https://learngitbranching.js.org/>
+
+- <https://www.gitkraken.com/>
+
+- <https://git-scm.com/docs/git-rebase>
 
 ## reflog & fsck --lost-found
