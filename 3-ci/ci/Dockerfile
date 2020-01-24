@@ -14,9 +14,8 @@ USER notroot
 WORKDIR /home/notroot
 RUN git clone https://aur.archlinux.org/yay.git yay && pushd yay && makepkg --noconfirm --syncdeps --rmdeps --install --clean
 
-RUN yay -S --noedit --noconfirm --needed android-sdk
-RUN yay -S --noedit --noconfirm --needed android-platform-28
-RUN yay --clean --noconfirm
+RUN yay -S --noconfirm --needed android-sdk android-platform-28
+RUN yay -Yc --noconfirm && yay -Sc --noconfirm
 
 USER root
 
