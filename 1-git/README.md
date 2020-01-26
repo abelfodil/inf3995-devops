@@ -20,7 +20,7 @@ Par exemple, sur un intervalle de 10 000 commits, il y aura dans le pire des cas
 
 - <https://git-scm.com/docs/git-bisect>
 
-- TODO: Repo exemple
+- <https://github.com/abelfodil/git-bisect-example>
 
 ## submodule
 
