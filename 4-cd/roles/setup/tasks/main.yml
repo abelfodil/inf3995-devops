@@ -1,0 +1,3 @@
+- import_tasks: copy_project_files.yml
+- import_tasks: build_target.yml
+- import_tasks: run_target.yml
