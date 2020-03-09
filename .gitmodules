@@ -1,9 +1,0 @@
-[submodule "2-cmake/lib/boost.di"]
-	path = 2-cmake/lib/boost.di
-	url = https://github.com/boost-experimental/di.git
-[submodule "2-cmake/lib/json"]
-	path = 2-cmake/lib/json
-	url = https://github.com/nlohmann/json.git
-[submodule "2-cmake/lib/pistache"]
-	path = 2-cmake/lib/pistache
-	url = https://github.com/oktal/pistache.git
