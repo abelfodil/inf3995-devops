@@ -5,8 +5,11 @@ RUN pacman -Syu --noconfirm
 RUN pacman -Syu --noconfirm --needed git ansible rsync base base-devel
 RUN pacman -Syu --noconfirm --needed cmake ninja clang
 RUN pacman -Syu --noconfirm --needed jdk8-openjdk
+
+#### Add your packages heres ####
 RUN pacman -Syu --noconfirm --needed fmt grpc
 RUN pacman -Syu --noconfirm --needed gmock
+#################################
 
 RUN useradd -m notroot
 RUN echo "notroot ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/notroot
